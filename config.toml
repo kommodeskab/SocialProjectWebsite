@@ -1,4 +1,4 @@
-baseURL = "https://kommodeskab.github.io/SocialProjectWebsite/"
+baseURL = "https://peterampazzo.github.io/project-website-template/"
 title = "Computational Social Science Project (Group 2)"
 description = "A project in 02467 Computational Social Science (2024) in connectivity of global airports and text analysis of their reviews."
 relativeURLs = true
