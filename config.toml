@@ -7,7 +7,7 @@ theme = "theme"
     authors = ["Andreas Bagge", "Gustav Rørhauge", "Rasmus Sørensen"]
     notebook = "https://github.com/kommodeskab/SocialProject"
     data = "https://github.com/kommodeskab/SocialProject"
-    github = "https://github.com/kommodeskab/SocialProject"
+    github = "https://github.com/kommodeskab/SocialProjecte"
     [[params.nav]]
         label = "Data"
         link = "/data-description"
