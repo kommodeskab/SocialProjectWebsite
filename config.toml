@@ -1,13 +1,13 @@
 baseURL = "https://peterampazzo.github.io/project-website-template/"
-title = "Project Title"
-description = "This is a project description"
+title = "Computational Social Science Project (Group 2)"
+description = "A project in 02467 Computational Social Science (2024) in connectivity of global airports and text analysis of their reviews."
 relativeURLs = true
 theme = "theme" 
 [params]
-    authors = ["Henrik Nielsen", "Inga Jensen", "Mikkel Andersen"]
-    notebook = "/explainer-notebook.html"
-    data = "https://drive.google.com"
-    github = "https://github.com/peterampazzo/project-website-template"
+    authors = ["Andreas Bagge", "Gustav Rørhauge", "Rasmus Sørensen"]
+    notebook = "https://github.com/kommodeskab/SocialProject"
+    data = "https://github.com/kommodeskab/SocialProject"
+    github = "https://github.com/kommodeskab/SocialProject"
     [[params.nav]]
         label = "Data"
         link = "/data-description"
