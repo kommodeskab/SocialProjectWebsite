@@ -1,40 +1,11 @@
 ---
-title: Home Page
+title: Flights connections and regional reviews of global airports ✈️
 layout: single
 next: data-description
 ---
 
-hello there
-Donec posuere justo at risus [efficitur convallis](#). Donec enim nibh, aliquet vel risus id, tincidunt consectetur felis. Proin porttitor odio a orci accumsan bibendum id at risus. Sed a posuere odio, ac lobortis augue. Maecenas aliquet ipsum vel libero dignissim, non aliquet justo eleifend. Fusce mollis, ante eget tincidunt imperdiet, mi ligula venenatis ex, ut pulvinar nunc ipsum tempus eros. Aliquam erat volutpat. Sed id _iaculis arcu_, sit amet varius libero. Etiam quis nisl pretium, eleifend quam nec, rutrum sapien. **Donec rutrum accumsan orci.**
+In this project, we will be looking at international airports and how they are connected. We'll model the connectivity of the airports using a directed graph, such that each node in the graph is an airport, and each edge going from node *a* to *b* is a flight flying from airport *a* to airport *b*. Therefore, the degree of each node will be the number of flight connections of the airport, and the weight of each edge is how often that flight has been flown. One interesting aspect of this graph is the fact that each node also have a set spatial coordinates, latitude and longitude, indirectly connecting airports that are close in space, in the sense that spatially close airports may not be connected by an edge but by culture, economics, regional development, and so on. 
 
+Also, we will be looking at textual reviews of the airports aswell as numerical ratings. Using these reviews and ratings, we seek to find connections between the quality of airports and the quality of connected and spatially close close airports. We have formulated our research questions as follows:
 
-## Math formula
-
-
-$$ x^n + y^n = z^n $$
-
-## Code chunk
-
-```
-import pandas as pd
-
-df = pd.DataFrame()
-```
-
-Sed id orci ullamcorper, commodo sapien in, scelerisque nunc. Duis posuere sed nisl in gravida. Pellentesque rutrum justo ut mi tempus dignissim. Ut pulvinar quis urna ut molestie. Pellentesque nec arcu metus. Vivamus non rutrum magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-![](https://source.unsplash.com/random/?Copenhagen)
-
-Phasellus viverra tellus viverra purus placerat, et lacinia mauris tristique. Nam semper venenatis lorem, nec ullamcorper tortor dignissim eget. Etiam non ipsum sed neque pharetra ullamcorper. Praesent ultrices ipsum varius dictum lacinia. Nulla placerat magna augue, volutpat rutrum nulla finibus sed. Phasellus maximus mi sit amet risus mattis, porta rhoncus elit dictum. Donec vel viverra lectus, vitae elementum arcu. Quisque quis molestie elit. Cras eget tellus vitae risus fermentum bibendum vitae ac turpis. Praesent mi eros, scelerisque sit amet sem at, hendrerit accumsan ligula.
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec mauris aliquet, convallis ligula vel, mollis est. Fusce accumsan massa vel lectus dapibus, at vehicula elit auctor.
-
-| Column 1  | Column 2  |  Column 3 |
-|---|---|---|
-| 1 | 4 | 7 |
-| 2 | 5 | 8 |
-| 3 | 6 | 9 |
-
-## [Explainer Notebook](explainer-notebook.html)
-
-Aenean non augue vulputate, bibendum ligula ac, euismod arcu. Proin consequat, urna at lobortis sodales, ligula nulla molestie dolor, et interdum nulla arcu eu lacus. Aenean maximus mi vel augue blandit, quis vehicula libero egestas. In mollis nibh in turpis sodales, eget luctus sem pretium. Integer lobortis diam vel nisi laoreet, ut condimentum risus ultrices. Praesent diam risus, imperdiet at lorem in, hendrerit auctor ex.
+> Where are the best airports located in the world? Are these airports connected to other airports of high quality? And, when adjusted for BNP per capita, where are the best airports compared to regional development?
