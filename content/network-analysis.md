@@ -13,5 +13,9 @@ Using the collected data, we constructed a network of international airport conn
 6. Continent
 7. BNP per capita
 
-Using the latitude and longitude, we were able to visualize our graph in a number of ways. 
-![graph1](../images/top10_airports_degree.png)
+Using the latitude and longitude, we were able to visualize our graph using each nodes spatial position. Beneath, we have visualized nodes using their degree and edges using weights (separately, to make things more manageable):
+![Graph edges](https://raw.githubusercontent.com/kommodeskab/SocialProject/main/images/flightmap.png)
+
+![Graph nodes](https://raw.githubusercontent.com/kommodeskab/SocialProjectWebsite/main/images/flightmap_nodes.png)
+
+Evidently, the most air traffic occurs in Europe and North America. These are also the regions in the world that are generally considered more developed. Not surprising, in North Africa, except along the coast, almost no air traffic occurs, due to the Sahara dessert and the low population density.
