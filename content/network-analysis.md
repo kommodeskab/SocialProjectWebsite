@@ -1,5 +1,5 @@
 ---
-title: Network analysis
+title: Network analysis 🕸️
 prev: data-description
 next: text-analysis
 ---
@@ -18,4 +18,4 @@ Using the latitude and longitude, we were able to visualize our graph using each
 
 ![Graph nodes](https://raw.githubusercontent.com/kommodeskab/SocialProjectWebsite/main/images/flightmap_nodes.png)
 
-Evidently, the most air traffic occurs in Europe and North America. These are also the regions in the world that are generally considered more developed. Not surprising, in North Africa, except along the coast, almost no air traffic occurs, due to the Sahara dessert and the low population density.
+Evidently, the most air traffic occurs in Europe, Eastern Asia and North America. Not surprising, in North Africa, except along the coast, almost no air traffic occurs, due to the Sahara dessert and the low population density.
