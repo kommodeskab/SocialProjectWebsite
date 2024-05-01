@@ -1,5 +1,5 @@
 ---
-title: Text and review analysis
+title: Text and review analysis 📖
 prev: network-analysis
 ---
 
