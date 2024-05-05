@@ -19,6 +19,21 @@ The data required for our project was available online, and we therefore didn't 
 
 For example, country names differed from dataset to dataset. **Macedonia** was sometimes named **North Macedonia**, **Swaziland** was sometimes named **Eswatini**, and **Czech Republic** was sometimes simply called **Czechia**. These disagreements mostly stems from politics and cultural controversies, which we didn't dwell on for too long, since it won't affect this analysis (as long as the region is correctly choosen). Therefore, we could resolve these disagreements manually by looking up alternative names for the relative few cases.
 
-Similarily, airport names also different between datasets (Openflights and Skytrax). These differences was not manually solveable, since the differences consisted of, for example, **u** instead of **ü**, **-** instead of **space**, and sometimes whole words missing. We fixed this issue using the [**Levenshtein distance**](https://en.wikipedia.org/wiki/Levenshtein_distance), i.e. computing the pairwise distances between airport names that didn't match, finding the minimum pairwise distance and then considering these airports as matching. 
-
+Similarily, airport names also different between datasets (Openflights and Skytrax). These differences was not manually solveable, since the differences consisted of, for example, **u** instead of **ü**, **-** instead of **space**, and sometimes whole words missing. We fixed this issue using the [**Levenshtein distance**](https://en.wikipedia.org/wiki/Levenshtein_distance), i.e. computing the pairwise distances between airport names that didn't match, finding the minimum pairwise distance and then considering these airports as matching. The Levenshtein distance is defined as:
+<div>
+$$
+lev(a[1..m], b[1..n]) = 
+\begin{cases} 
+m & \text{if } n = 0 \\
+n & \text{if } m = 0 \\
+lev(a[1..m-1], b[1..n-1]) & \text{if } a[m] = b[n] \\
+1 + \min\begin{cases}
+lev(a[1..m-1], b[1..n]) \\
+lev(a[1..m], b[1..n-1]) \\
+lev(a[1..m-1], b[1..n-1])
+\end{cases} & \text{if } a[m] \neq b[n]
+\end{cases}
+$$
+</div>
+and it measures the number of deletions, substitutions, and insertions neccesary to go from string \(a\) to string \(b\). 
 When the preprocessing was done, we were ready to construct the network. 
