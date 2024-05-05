@@ -20,15 +20,21 @@ Using the latitude and longitude, we were able to visualize our graph using each
 
 Evidently, the most air traffic occurs in Europe, Eastern Asia and North America. Not surprising, in North Africa, except along the coast, almost no air traffic occurs, due to the Sahara dessert and the low population density.
 ![Centrality measures](https://raw.githubusercontent.com/kommodeskab/SocialProject/main/images/Centrality_measures.png)
-To get a better understanding of the network some analytical methods have to be used. Firstly, we conducted different network centrality measurements such as Clossness-, eigenvector-, and betweenness centrality. Then we compared it to the degree so that we achieved three scatter plots.
+To get a better understanding of the network some analytical methods have to be used. Firstly, we conducted different network centrality measurements such as clossness-, eigenvector-, and betweenness centrality. Then we compared it to the degree so that we achieved three scatter plots.
 
 On the scatter plot the closeness centrality is somehow positively correlated with the degree. The closeness centrality says something about how fast information spreads in the graph and depends on how many connections the airport has. The positive correlation means that airports with more connections tend to be more central and therefore are a critical point for efficiency of transport.
 The eigenvector centrality seems to be quite linear and positively correlated. However, the spread of values with the airports of high degree means that even airports with less degree can influence the network due to them being connected to other major hubs.
 When it comes to the betweenness centrality, which tells if an airport lies on paths between other airports, we do not see a clear tendency. This amplifies the tendency in eigenvector centrality because nodes with a moderate degree still have importance in the connection between different parts of the network.
 To combine this result we use the composite index where every centrality is weighted equally we follow the formula: 
 
-1/3*(ClosenessCentrality(n)/max(ClosenessCentrality(n)∣n∈G) + EigenvectorCentrality(n)/max(EigenvectorCentrality(n)∣n∈G) + BetweenessCentrality(n)/max(BetweenessCentrality(n)∣n∈G))
-
+<div>
+$$
+\begin{gather*}
+\text{Composite centrality}=\frac{1}{3} \cdot \left( \frac{Cc(n)}{\max(CC(n) | n \in G)}  \frac{EC(n)}{\max(EC(n) | n \in G)} + \frac{BC(n)}{\max(BC(n) | n \in G)} \right) \\
+CC = \text{Closeness Centrality}, \hspace{5mm} EC = \text{Eigenvector centrality}, \hspace{5mm} BC = \text{betweenness centrality}
+\end{gather*}
+$$
+</div>
 Here is a list to show the 6 most central airports:
 
 1. Charles de Gaulle International Airport has a composite score of 0.9846
