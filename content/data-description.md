@@ -12,7 +12,7 @@ We used the following datasets:
 * [routes.dat](https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat): The source and destination, and more (9 attributes) of 67663 flights connecting between airports. **Source:** June 2014, Airline Route Mapper.
 * [Airport reviews](https://github.com/quankiquanki/skytrax-reviews-dataset): 17721 text reviews of airports all over the world. Most text reviews also have a numerical rating. **Source**: github-user quankiquanki, obtained from Skytrax between 2007 and 2015.
 * [BNP per capita](https://ourworldindata.org/grapher/gdp-per-capita-worldbank?time=2015): The BNP per capita of most countries in the world. Multiple years are available, we choose 2015 to overlap with the reviews. **Source**: World Bank (2023).
-* [Continents](https://ourworldindata.org/world-region-map-definitions): The contient/region of every country. There are multiple ways of classifying regions of countries, we went with the more "traditional" way. **Source**: Our World In Data. 
+* [Continents](https://ourworldindata.org/world-region-map-definitions): The contient/region of every country. There are multiple ways of classifying regions of countries, we went with the more "traditional" way. **Source**: Our World In Data.
 
 # Preprocessing
 The data required for our project was available online, and we therefore did not have to do any webscraping. Still, some preprocessing was neccesary. 
@@ -36,4 +36,7 @@ lev(a[1..m-1], b[1..n-1])
 $$
 </div>
 and it measures the number of deletions, substitutions, and insertions neccesary to go from string \(a\) to string \(b\). 
+
+We combined the dataset over airports with the datasets over BNP, continents, and user reviews, to construct our final [airport-dataset](https://github.com/kommodeskab/SocialProject/blob/main/data/airports_cleaned.csv).
+
 When the preprocessing was done, we were ready to construct the network. 
