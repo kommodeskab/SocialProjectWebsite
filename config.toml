@@ -5,8 +5,8 @@ relativeURLs = true
 theme = "theme" 
 [params]
     authors = ["Andreas Bagge", "Gustav Rørhauge", "Rasmus Sørensen"]
-    notebook = "https://github.com/kommodeskab/SocialProject"
-    data = "https://github.com/kommodeskab/SocialProject"
+    notebook = "https://github.com/kommodeskab/SocialProject/blob/main/explainer_notebook.ipynb"
+    data = "https://github.com/kommodeskab/SocialProject/tree/main/data"
     github = "https://github.com/kommodeskab/SocialProject"
     [[params.nav]]
         label = "Data"
