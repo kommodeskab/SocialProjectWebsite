@@ -16,9 +16,9 @@ Using the collected data, we constructed a network of international airport conn
 Using the latitude and longitude, we were able to visualize our graph using each nodes spatial position. Beneath, we have visualized nodes using their degree and edges using weights (separately, to make things more manageable):
 ![Graph edges](https://raw.githubusercontent.com/kommodeskab/SocialProject/main/images/flightmap.png)
 ![Graph nodes](https://raw.githubusercontent.com/kommodeskab/SocialProject/main/images/flightmap_nodes.png)
-***Top pane**: flight routes between airports. The routes have been visualized as "great circles", i.e. the shortest path when between two points on a globe. **Bottom pane**: All the different airports. The bigger the dot, the higher degree.*
+***Top pane**: flight routes between airports. The routes have been visualized as "great circles", i.e. the shortest path between two points on a globe. **Bottom pane**: All the different airports. The bigger the dot, the higher degree.*
 
-Evidently, the most air traffic occurs in Europe, Eastern Asia and North America. Not surprising, in North Africa, except along the coast, almost no air traffic occurs, due to the Sahara dessert and the low population density.
+Evidently, the most air traffic occurs in Europe, Eastern Asia and North America. Not surprisingæy, in North Africa, except along the coast, almost no air traffic occurs, due to the Sahara dessert and the low population density.
 
 To investigate a network, we have to understand why we are doing it. So with the network analysis, we aim to answer the following questions:
 
@@ -26,7 +26,7 @@ To investigate a network, we have to understand why we are doing it. So with the
 2. Are these airports connected to other airports of high quality? 
 3. And, when adjusted for BNP per capita, where are the best airports compared to regional development?
 
-The first step is to find the basic properties of our network G which is the degree. The degree describes how many connections each airport has, and is a valuable insight. Here we have the degree distribution and the log-log scale of the distribution.
+The first step is to find the one of the most basic properties of our network G, which is the degree. The degree describes how many connections each airport has, and is a valuable insight. Here we have the degree distribution and the log-log scale of the distribution.
 
 ![Degree](https://raw.githubusercontent.com/kommodeskab/SocialProject/main/images/degree.png)
 
